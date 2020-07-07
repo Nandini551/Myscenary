@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<style type="text/css">
+	header
+	{
+		text-align: center;
+		text-shadow:2px 1px;
+		box-shadow:0 4px 8px 0 rgba(0,0,0,2);
+		color: #FF69B4;
+		background-color: #FFE4E1;
+		font-weight: bold;
+		padding:1%;
+		font-size: 30px; 
+	}
+	.grid
+	{
+		display: flex;
+		flex-wrap: wrap;
+		border:1px #FF4500;
+		justify-content: space-around;
+	}
+	.shorthand
+	{
+		background-color:#FDF5E6;
+		display: flex;
+	}
+	img
+	{
+		width:250px;
+		height: 250px;
+		margin-left:10px;
+		border: 1px solid green;
+	}
+	@media only screen and (max-width: 600px)
+	{
+		.shorthand
+		{
+			background:#FDF5E6;
+			display: flex;
+		}
+		header
+		{
+			text-align: center;
+			text-shadow:2px 1px
+			box-shadow:0 4px 8px 0 rgba(0,0,0,2);
+			color: #FF69B4;
+			background-color: #FFE4E1;
+			font-weight: bold;
+			padding:1%;
+			font-size: 30px; 
+		}
+		.grid
+		{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+		img
+		{
+
+		width:250px;
+		height: 250px;
+		padding: 15px;
+		margin:55px;
+		border: 1px solid green;
+		}
+	}
+</style>
+</head>
+<body>
+	<header>IMAGES</header>
+	<div class="grid shorthand">
+	<img src="bgcd1.jpg">
+	<img src="bgcd2.jpg">
+	<img src="bgcd3.jpg">
+	<img src="bgcd4.jpg">
+	<img src="bgcd5.jpg">
+	<img src="bgcd1.jpg">
+	<img src="bgcd2.jpg">
+	<img src="bgcd3.jpg">
+	<img src="bgcd4.jpg">
+	<img src="bgcd5.jpg">
+	</div>
+</body>
+</html>
